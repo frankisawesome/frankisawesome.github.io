@@ -1,341 +1,631 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="description" content="Front-end and Vue Developer" />
-    <meta name="keywords" content="resume,cv,Marko Marković" />
-    <meta name="author" content="Marko Marković" />
-    <!-- <meta name="robots" content="noindex"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- <link rel="preload" href="./fonts/FiraGO-Regular.latin.woff2" as="font" crossorigin="anonymous"> -->
-    <link href="./build.css" rel="stylesheet" />
-    <title>Frank Li — Resume</title>
-  </head>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Frank Li</title><style>
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-  <body>
-    <main class="font-firago hyphens-manual">
-      <!-- Page -->
-      <div
-        class="p-6 mx-auto page max-w-2xl print:max-w-letter md:max-w-letter md:h-letter xsm:p-8 sm:p-9 md:p-16 bg-white"
-      >
-        <!-- Name -->
-        <header class="flex items-center mb-8 md:mb-11">
-          <div
-            class="initials-container mr-5 text-base leading-none text-white bg-gray-700 font-medium print:bg-black px-3 py-2.5"
-          >
-            <div class="initial text-center pb-0.8">F</div>
-            <div class="text-center initial">L</div>
-          </div>
-          <h1 class="text-2xl font-semibold text-gray-750">
-            Frank Li <a href="https://bubbli.io/frank"class="text-md font-normal">@ bubbli.io/frank</a>
-          </h1>
-        </header>
-        <!-- end Name -->
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-        <!-- Column -->
-        <div
-          class="md:col-count-2 print:col-count-2 col-gap-md md:h-letter-col print:h-letter-col col-fill-auto"
-        >
-          <!-- Use mt-3 class when the element isn’t the first one in the column -->
-          <section>
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                ABOUT ME
-              </h2>
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-              <section class="mb-4 break-inside-avoid">
-                <p class="mt-2 text-md text-gray-700 leading-normal">
-                  I grew up loving all things tech related, and naturally, I started getting into programming in high school. Started off with the most basic python scripts, making landing pages in html and css, I am now a part time software developer as well as a technical co-founder.
-                  <br><br />
-                  I gained invalueable experience in teamwork, leadership, and communication thoughrout my journey, and I hope to improve and learn so much more. Besides programming, I'm a coffee lover, cat owner, passionate pianist, and a music festival goer.
-                </p>
-              </section>
-            </div>
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-          <section class="mt-8">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                WORK EXPERIENCE
-              </h2>
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
-              <section class="mb-4 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Software Developer (Fullstack)
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    Mycelium Ventures | Jun 2020 - Present
-                  </p>
-                </header>
-                <ul class="">
-                  <li class="mt-2 text-md text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                   I'm mainly responsible for continuous feature delivery of Chainlink Oracle Reputation (COR). Our tech stack is React - Node - Postgres - CircleCI - GCP.
-                  </li>
-                  <li class="mt-2 text-md text-gray-700 leading-normal">
-                    <span
-                      class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                      >›</span
-                    >
-                    My daily tasks include task organisation (clickup), coding requested features, fixing PR comments, attending team meetings, and pet the office dog named ETH.
-                  </li>
-                </ul>
-              </section>
-            </div>
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-            <section class="mb-4 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                  Sessional Academic
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  Queensland University of Technology | Mar 2020 - Present
-                </p>
-              </header>
-              <ul class="">
-                <li class="mt-2 text-md text-gray-700 leading-normal">
-                  <span
-                    class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                    >›</span
-                  >
-                  I am responsible for delivering classes, holding support session and marking for CAB230 Web Computing at QUT
-                </li>
-              <li class="mt-2 text-md text-gray-700 leading-normal">
-                <span
-                  class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                  >›</span
-                >
-                I lead the development, testing, deployment and continuous integration of a Node-Express API used by two units (CAB230 and IFN666)
-              </li>
-            </ul>
-            <h3 class="text-lg font-semibold text-gray-700 leading-snugish mt-4">
-              Student Ambassador
-            </h3>
-            <p class="leading-normal text-md text-gray-650 ">
-             Queensland University of Technology |  Apr 2018 - Apr 2019
-            </p>
-          </header>
-          <ul class="">
-            <li class="mt-2 text-md text-gray-700 leading-normal">
-              <span
-                class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                >›</span
-              >
-              I was responsible for many of the flag ship events of QUT Internationl, including Open Day 2018, High School Day 2018 and Careers Expo 2018
-            </li>
-          </ul>
-            </section>
-            <section class="mt-8">
-              <!-- To keep in the same column -->
-              <div class="break-inside-avoid">
-                <h2
-                  class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-                >
-                  SKILLS
-                </h2>
-  
-                <section class="mb-4 break-inside-avoid">
-                  <ul class="">
-                    <li class="mt-2 text-md text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      OOP - C#, Java and TypeScript. Composition/inheritance
-                    </li>
-                    <li class="mt-2 text-md text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Web - React, Node, AWS, GCP, Azure, severless
-                    </li>
-                    <li class="mt-2 text-md text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Data Science - R, ggplot, Python, Pandas, TensorFlow
-                    </li><li class="mt-2 text-md text-gray-700 leading-normal">
-                      <span
-                        class="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px"
-                        >›</span
-                      >
-                      Other - Git, Bash/Shell, Haskell (FP), DevOps, Agile
-                    </li>
-  
-                </section>
-              </div>
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-          <section class="mt-8">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                EDUCATION
-              </h2>
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-              <section class="mb-4 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    Queensland University of Technology
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    2018 - 2021 | Bachelor's Degree in Mathematics and Information Technology
-                  </p>
-                  <p class="leading-normal text-md font-bold text-gray-650">
-                    Vice-Chancellor's Scholarship | GPA 6.6 | ATAR 99.4
-                  </p>
-                </header>
-              </section>
-            </div>
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-          <section class="mt-8">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                PROJECTS & START-UPS
-              </h2>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-              <section class="mb-4 break-inside-avoid">
-                <header>
-                  <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                    <a href="https://bubbli.io class="group">
-                      Bubbli.io
-                      <span
-                        class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-                        >↗</span
-                      >
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    2020 | TypeScript - Firebase
-                  </p>
-                </header>
-                <p class="mt-2 text-md text-gray-700 leading-normal">
-                  A new personal bio project I co-founded. Developed in TypeScript React and a serverless backend structure on Firebase.
-                  Currently in UI/UX testing phase.
-                </p>
-              </section>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
-              <section class="mb-4 break-inside-avoid">
-                <header>
-                  <h3
-                    class="text-lg font-semibold text-gray-700 leading-snugish"
-                  >
-                    <a href="https://surveypanda.page" class="group">
-                      Survey Panda
-                      <span
-                        class="inline-block text-gray-550 print:text-black font-normal group-hover:text-gray-700 transition duration-100 ease-in"
-                        >↗</span
-                      >
-                    </a>
-                  </h3>
-                  <p class="leading-normal text-md text-gray-650">
-                    Since 2019 | JavaScript (MERN)
-                  </p>
-                </header>
-                <p class="mt-2 text-md text-gray-700 leading-normal">
-                    A full stack project deployed on GCP App Engine. React - tailwind front end, Node - express - MongoDB backend.
-                </p>
-                <p class="mt-2 text-md text-gray-700 leading-normal">
-                  The initial app won the Tanda Hackathon in 2019, and we have been working on shipping more features and getting customers.
-              </p>
-              </section>
-            </div>
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
-            <section class="mb-4 break-inside-avoid">
-              <header>
-                <h3 class="text-lg font-semibold text-gray-700 leading-snugish">
-                 Statistical study in RT
-                </h3>
-                <p class="leading-normal text-md text-gray-650">
-                  2019 | R
-                </p>
-              </header>
-              <p class="mt-2 text-md text-gray-700 leading-normal">
-                An n=90 experiment designed to analyse factors that affect human reaction time. Techniques used including using a log scaled generalised linear model, filtering data, stepwise and weighted regression.
-              </p>
-            </section>
-          </section>
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
 
-          <section class="mt-8">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                OPEN SOURCE & VOLUNTEERING
-              </h2>
-            </section>
-            <section class="mb-4 break-inside-avoid">
-              <header>
-                <h3
-                  class="text-lg font-semibold text-gray-700 leading-snugish"
-                >
-                  Definitely Typed
-                </h3>
-              </header>
-              <p class="mt-2 text-md text-gray-700 leading-normal">
-                A github project aimed at providing type definition files for NPM packages. I am a contributor and I am currently working on publishing a React-Firebase image resize and uploader component in TypeScript.
-              </p>
-            </section>
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
 
-              </section>
-                  <section class="mb-4 break-inside-avoid">
-                    <header>
-                      <h3
-                        class="text-lg font-semibold text-gray-700 leading-snugish"
-                      >
-                        Peer learning facilitator at QUT
-                      </h3>
-                    </header>
-                    <p class="mt-2 text-md text-gray-700 leading-normal">
-                      A volunteer peer learning program, I tutor students in units I've completed.
-                    </p>
-                  </section>
-          </section>
+mark {
+	background-color: transparent;
+}
 
-          <section class="mt-8">
-            <!-- To keep in the same column -->
-            <div class="break-inside-avoid">
-              <h2
-                class="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal"
-              >
-                CONTACT
-              </h2>
+.indented {
+	padding-left: 1.5em;
+}
 
-              <section class="mb-4 break-inside-avoid">
-                <ul class="list-inside pr-7">
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    threestones2@hotmail.com
-                  </li>
-                  <li class="mt-1.5 leading-normal text-gray-700 text-md">
-                    (+61) 0431 386 524
-                  </li>
-                </ul>
-              </section>
-            </div>
-          </section>
-        </div>
-        <!-- end Column -->
-      </div>
-    </main>
-  </body>
-</html>
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "Hiragino Mincho Pro", "Songti TC", "Songti SC", "SimSun", "Nanum Myeongjo", NanumMyeongjo, Batang, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC', 'Noto Sans CJK KR'; }
+
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC', 'Noto Sans Mono CJK KR'; }
+
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2d70921b-6a6c-40ca-aad6-64bed8ceaa33" class="page sans"><header><img class="page-cover-image" src="https://www.notion.so/images/page-cover/gradients_11.jpg" style="object-position:center 40%"/><div class="page-header-icon page-header-icon-with-cover"><img class="icon" src="Frank%20Li%202d70921b6a6c40caaad664bed8ceaa33/123621800_379627819822920_103039750567550688_n.jpg"/></div><h1 class="page-title">Frank Li</h1></header><div class="page-body"><blockquote id="4e06f3b9-760e-48b4-9b5f-c484cba52575" class="">I&#x27;m a software engineer based in Brisbane 🌴 with a keen interest in empowering people with emerging technology.
+
+My focus area for the past few years has been full-stack development in the JavaScript/TypeScript tech stack, translating business requirements into endpoints, data structures, diagrams and infrastructures - then code them out.</blockquote><h1 id="7598793a-d665-413d-92ce-04c04e97b286" class="">☎️ Contact information</h1><p id="4a4d9446-983b-489c-81a0-d26c77aafb25" class="">📧 frank@bubbli.io</p><p id="42ce086d-a422-4843-a2e5-baed1f63f2c6" class="">🔗 <strong>Github - </strong><a href="https://github.com/frankisawesome">https://github.com/frankisawesome</a></p><p id="e835cb4f-8b51-4dea-b735-e36afade9f5c" class="">🔗 <strong>LinkedIn - </strong><a href="https://www.linkedin.com/in/frank-l-a89288116/">https://www.linkedin.com/in/frank-l-a89288116</a></p><hr id="56ea2c9c-5511-438f-9fbf-7f5f7c862412"/><h1 id="32844acf-d569-44af-afd2-d1554c22f477" class="">👨🏻‍🏫 Work experience</h1><h2 id="083f739d-97ec-400e-85c0-1c9ccdc2b4fb" class="">Full-stack Engineer</h2><p id="1b6b8196-0a11-4341-92f1-0d9f18c00066" class="block-color-gray">Mycelium Ventures<em>, Brisbane, Australia– (May 2020 - Present)</em></p><ul id="9e80d7df-15db-4189-ac80-619ef8776fff" class="bulleted-list"><li>Led the development of Chainlink Oracle Reputation (<a href="http://reputaion.link">Reputaion.link</a>).  </li></ul><ul id="81448a14-72ee-40da-a798-192595875f4b" class="bulleted-list"><li>Responsible for translating business requirements into software features, working with a team of 6.</li></ul><ul id="58b7b03e-8cc0-43f0-b64f-e246839bddf2" class="bulleted-list"><li>Led the development and deployment of live transaction streaming.</li></ul><ul id="85744bdb-2641-4c67-9674-cfe31637535d" class="bulleted-list"><li>Led the development and release of Total Value Secured on Chainlink (TVS).</li></ul><ul id="bdee268a-5543-4bda-9b68-bb80fbcd5d65" class="bulleted-list"><li>Innovated the technology stack, introduced Redis with refresh service.</li></ul><ul id="76c2ff6b-42e8-43f6-beb6-81d0d2de6eef" class="bulleted-list"><li>Optimised complex queries on a ever changing streamed data set of Ethereum transactions.</li></ul><ul id="55db858d-aa3a-401e-b123-00b3ae971713" class="bulleted-list"><li>Responsible for identifying data flow of new features, delegating tasks as well as software development on multiple code bases across several languages.</li></ul><ul id="01f88519-2817-4d0f-be87-730c439ae220" class="bulleted-list"><li>Led the improvement of CI/CD pipeline - introduction of Sentry and refined CircleCI builds.</li></ul><ul id="8d421be7-ef1c-4a72-99f2-871ddaf82dfd" class="bulleted-list"><li>Experience running feature releases under extreme pressure (product deadline, new requirements from stakeholders etc)</li></ul><ul id="66121304-c803-45fb-97fc-2cea30518d93" class="bulleted-list"><li>Worked with technology including Google Kubernetes Engine (JavaScript microservices), Cloud PubSub, Container Registry, Cloud Functions (Golang), Cloud SQL (Postgres), BigQuery, Memorystore (Redis), and code bases in React, Express, Golang and Solidity.</li></ul><ul id="078b3cf2-f0bb-4393-8a57-f8da0dd01045" class="bulleted-list"><li>Wrote internal blogs for feature releases and technology deep dives.</li></ul><h2 id="92aa1d0b-cae9-43b9-8030-12cd92fac2d6" class="">Sessional Academic</h2><p id="94f5fb70-27eb-4520-a059-8a52b139068b" class="block-color-gray">Queensland University of Technology<em>, Brisbane – (Feb 2020 - June 2020)</em></p><ul id="e33e079c-3133-464e-b2ac-8a45c439f6ca" class="bulleted-list"><li>Tutored in person and online classes for CAB230 Web Computing (React-Node/Express-SQL).</li></ul><ul id="68c00dbf-a0c3-41e3-a4ab-108c2eb27661" class="bulleted-list"><li>Led the development of stocks api which was used in assignments for two units (CAB230, IFN666).</li></ul><h2 id="c25e5bcd-5166-412f-9894-8a82470864b0" class="">Student Ambassador</h2><p id="eea5ac11-3f69-46d1-9f30-9862da201f34" class="block-color-gray">Queensland University of Technology<em>, Brisbane – (Feb 2018 - Oct 2018)</em></p><ul id="0311b2cb-95fe-4045-bf05-6a8ac061cee5" class="bulleted-list"><li>Represented QUT in various high school student facing events.</li></ul><hr id="c830bd87-1c1d-47f8-88df-b9269b9b2268"/><h1 id="8204bb3c-ef30-4224-941f-41e6cc79e707" class="">📽️ Projects</h1><h2 id="d53aecc4-267b-4844-8b3a-9681131a64f1" class="">🐼 Survey Panda (surveypanda.page)</h2><ul id="56a930b6-2e14-46ea-b870-f3fe9febb323" class="bulleted-list"><li>Originated as a hackathon winning project connecting employee with employers</li></ul><ul id="04ff7e82-c8a9-4b1b-977c-261b4682569f" class="bulleted-list"><li>Further development done as tech showcase - relatively complex backend made in house.</li></ul><ul id="807939ea-cae4-41d9-8187-678040eff0a5" class="bulleted-list"><li>Uses MERN stack running on Heroku.</li></ul><h2 id="0f348f93-88b9-456e-9aa3-9fd07e2bf6ed" class="">💭 Bubbli.io</h2><ul id="d00d7135-2e7f-42ae-aecf-3d1b9160e8e8" class="bulleted-list"><li>MVP currently running as a Firebase-MERN app</li></ul><ul id="5180ecd0-af3a-4fa2-808c-d4dfda4f3b12" class="bulleted-list"><li>Full product Development in progress as we move to a more scalable platform after securing funding</li></ul><ul id="dfbe3bb2-a548-402d-acd8-b3e3c607626c" class="bulleted-list"><li>For a sneak peek go to <a href="http://bubbli.io/frank">bubbli.io/frank</a> - note that this is the MVP put together in a short time frame.</li></ul><p id="544a2e8b-2b7c-4a2a-92fb-9bc1e58a2029" class="">
+</p><hr id="0bd85cbb-4ea1-4b59-b791-a3f1c77a33c9"/><h1 id="27747bd9-8947-45de-94b6-597f5b1ad479" class="">🛠 Skills</h1><h2 id="09406ff1-c05f-4470-914b-f2b9816460ef" class="">💻 Technology</h2><h3 id="dae000a9-c421-482f-8360-e455ff1a346a" class="">Javascript/Typescript ⭐️⭐️⭐️⭐️</h3><p id="3d3d5901-ce2c-4b18-bba2-8b8fadad842e" class="">My &quot;native&quot; programming language, I&#x27;ve worked with it for over 3 years. I&#x27;ve used it in front-end with React and Vue, in back-end for APIs with Node, Express, in testing with Mocha/Jest, as well as in various microservices (db health check, cache refresh, query execution etc). I&#x27;m comfortable with the latest language features, tooling and platforms.</p><h3 id="eac040c8-a5f4-4b8e-895e-db0f9c96f759" class="">Cloud Computing⭐️⭐️⭐️⭐️</h3><p id="f3e81797-c0bd-4424-a55e-77e6d221d41e" class="">As a full-stack developer I spend a lot of time in various cloud services, configuring different pipelines. I have a solid understanding in almost all GCP products, most notably GKE, BigQuery, PubSub, Cloud Functions etc. I also have experience using AWS products (EC2, ASG, Fargate etc) as well as Azure products (CosmosDB, App Engine etc)</p><h3 id="05e25ed6-18fb-47f3-8bd2-3c5187a7c3a9" class="">C#/Java/Python/R ⭐️⭐️⭐️</h3><p id="fbb40cd3-9c89-4e6d-abad-6b56a3bdaaa4" class="">I learnt OOP in C# and Java, in both of which I&#x27;ve made relatively large scaled object oriented applications for university assignments.</p><p id="54863f03-df22-4b0c-99a8-c1c8ddec479e" class="">I&#x27;ve also done a lot of Data Science projects, fitting models and visualising results in Python and R. I have a very solid understanding in the underlying mathematics principles used in modelling due to my second degree in Math (Statistics) and I&#x27;ve found working with large data sets rewarding and enjoyable.</p><h3 id="8c5454ba-ff32-4fd1-adfa-2d1b5a04e35e" class="">Golang/Solidity ⭐️⭐️</h3><p id="1618193f-6f07-4e9f-bd08-9608c9424f0c" class="">I deal with Goland and Solidity code bases a lot on a daily basis, most are open sourced code bases written for Blockchain specific applications. I have grown to be able to read and digest code written in these languages but I do lack experience developing in them.</p><hr id="5bac479f-f247-494f-92e8-7be588f9c9e0"/><h1 id="11cdb85d-3526-4b98-8182-09a9d25cf5ca" class="">📜 Articles and Blogs</h1><ul id="f930688d-a57b-42e2-b6ae-c003e010b322" class="bulleted-list"><li><a href="https://reputation.link/blog/27">Flux Aggregator Contracts: The Technical Explanation</a></li></ul><ul id="fc0b6073-2eb5-4c70-b444-4edf6bd26010" class="bulleted-list"><li><a href="https://reputation.link/blog/31">Total Value Secured (USD) by the Chainlink Network</a></li></ul><ul id="edf7e7fd-8e03-4aa4-9378-0a4fed23eb9d" class="bulleted-list"><li><a href="https://reputation.link/blog/32">COR Development Update #3</a></li></ul><ul id="d5a18399-019a-427b-a207-2f0bcbd1d68e" class="bulleted-list"><li><a href="https://reputation.link/blog/33">COR Development Update #2</a></li></ul><hr id="aa2ad615-f7fd-4f3a-b096-3ba1b725491e"/><h1 id="420d32a2-6055-499b-a367-472b2366fdf2" class="">📚 Education &amp; Awards</h1><h2 id="60475c28-cdae-40aa-bb75-3d87149c1ba6" class=""><strong>Bachelor&#x27;s Degree in IT and Mathematics</strong></h2><p id="05c94202-8c60-4ea7-b97d-5cab911ddf9f" class="">2018-2021 | GPA 6.6 | Major in Computer Science &amp; Statistics</p><h2 id="1f78a9fa-50f1-48fd-9a47-2b95ddb09367" class="">QUT Vice-Chancellor&#x27;s Scholarship</h2><p id="f8636523-89c5-4284-9281-de27d3cf28c8" class="">I was awarded the QUT VC&#x27;s scholarship in 2018 after graduating high school with an OP1.</p><h2 id="41a10cd3-c56b-4761-9c0d-89962aaff4a0" class="">Tanda Hackathon 2019 Winner</h2><p id="b5f1cc4e-441a-4203-8ef6-1a95c29f7e66" class="">I led team <a href="http://surveypanda.page">Survey Panda</a> to win the best overall award in Tanda Hackathon 2019.</p><p id="02ed2cf0-6342-4625-92a7-4a126eaa4acd" class="">
+</p></div></article></body></html>
